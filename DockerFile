@@ -1,0 +1,14 @@
+# Use an official Nginx image from the Docker Hub
+FROM nginx:alpine
+
+# Remove the default Nginx website files
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy the website files to the Nginx directory
+COPY . /usr/share/nginx/html
+
+# Expose port 80 to the outside world
+EXPOSE 80
+
+# Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]
