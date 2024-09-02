@@ -1,7 +1,7 @@
 docker image prune -a
 
 # Step 1: Define a unique build ID (using a timestamp for uniqueness)
-$BUILD_ID = 12
+$BUILD_ID = 13
 
 # Step 2: Build the Docker image with a unique tag
 docker build -t rahulnsanand/portfolio:$BUILD_ID .
