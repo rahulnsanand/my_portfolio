@@ -1,17 +1,7 @@
-Steller Free Bootstrap landing page for personal and commercial use. Designed with ♥️ and creativity by Devcrud.com 
+docker build -t my-portfolio .
 
-Product Page: https://wwww.devcrud.com/
+docker tag my-portfolio rahulnsanand/my-portfolio:latest
 
-Credits:
+docker push rahulnsanand/my-portfolio:latest
 
-    Demo Images:
-        Unsplash:       (https://www.unsplash.com)
-
-    Icons:
-		Themify Icons (https://themify.me/themify-icons)
-
-	Other:
-		jQuery (https://www.jquery.com)
-		Bootstrap (https://www.getbootstrap.com)
-		Bootstrap Affix (http://getbootstrap.com/javascript/#affix) 
-
+docker run -d -p 8080:80 rahulnsanand/my-portfolio:latest
