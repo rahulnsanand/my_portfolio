@@ -9,12 +9,12 @@
 
     <!-- Favicon -->
     <link rel="icon" href="assets/imgs/rahul_favicon.svg" type="image/svg+xml">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css?v=2.0">
     <!-- Bootstrap + portfolio main styles -->
-	<link rel="stylesheet" href="assets/css/portfolio.css">
-    <link rel="stylesheet" href = "assets/fonts/style.css" >
+	<link rel="stylesheet" href="assets/css/portfolio.css?v=2.0">
+    <link rel="stylesheet" href = "assets/fonts/style.css?v=2.0" >
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -494,34 +494,6 @@
     </section>
     <!-- End of Contact Section -->
 
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-
-    <script type="text/javascript">
-        var map;
-        var marker = [];
-        var mapOptions = {
-            scrollWheelZoom: false,
-        };
-
-        var id = 'map';
-
-        var centerLatLng = [12.966043458314124, 77.69754380845836];
-        map = L.map(id, mapOptions).setView(centerLatLng, 14);
-
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-            attribution: '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>',
-        }).addTo(map);
-
-
-        L.control.bigImage({
-            position: 'topright'
-        }).addTo(map);
-
-    </script>
-
-
     <!-- Page Footer -->
     <footer class="page-footer">
         <div class="container">
@@ -544,14 +516,17 @@
     <!-- End of page footer -->
 	
 	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js?v=2.0"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js?v=2.0"></script>
     <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js?v=2.0"></script>
     <!-- fontawesome js -->
-    <script src="https://kit.fontawesome.com/e3f4b4a28b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e3f4b4a28b.js?v=2.0" crossorigin="anonymous"></script>
     <!-- portfolio js -->
-    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/portfolio.js?v=2.0"></script>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js?v=2.0"></script>
+
 
 </body>
 </html>

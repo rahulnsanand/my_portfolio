@@ -1,10 +1,11 @@
 docker image prune -a
+docker system prune -a --volumes
 
 # Step 1: Define a unique build ID (using a timestamp for uniqueness)
-$BUILD_ID = 13
+$BUILD_ID = 15
 
 # Step 2: Build the Docker image with a unique tag
-docker build -t rahulnsanand/portfolio:$BUILD_ID .
+docker build --no-cache -t rahulnsanand/portfolio:$BUILD_ID .
 
 # Step 3: Push the image with the unique tag to Docker Hub
 docker push rahulnsanand/portfolio:$BUILD_ID

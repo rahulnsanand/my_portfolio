@@ -34,4 +34,24 @@ $(document).ready(function(){
 
 	// Add event listener to button
 	document.getElementById('downloadResume_Secondary').addEventListener('click', openInNewTab);
+
+
+	var map;
+	var mapOptions = {
+		scrollWheelZoom: false,
+	};
+
+	var id = 'map';
+
+	var centerLatLng = [12.966043458314124, 77.69754380845836];
+	map = L.map(id, mapOptions).setView(centerLatLng, 14);
+
+	L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+		attribution: '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>',
+	}).addTo(map);
+
+
+	L.control.bigImage({
+		position: 'topright'
+	}).addTo(map);
 });
