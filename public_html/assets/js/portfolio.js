@@ -1,16 +1,3 @@
-/*!
-=========================================================
-* portfolio Landing page
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 // smooth scroll
 $(document).ready(function(){
@@ -29,4 +16,22 @@ $(document).ready(function(){
 			});
       	} 
     });
+
+	// Function to trigger the download
+	function openInNewTab() {
+		const url = 'assets/resume/rahuls_resume.pdf'; // Path to your file
+		const newTab = window.open(url, '_blank');
+		if (newTab) {
+			newTab.focus(); // Focus on the new tab
+		} else {
+			// If the popup was blocked, alert the user
+			alert('Please allow popups for this site.');
+		}
+	}
+
+	// Add event listener to button
+	document.getElementById('downloadResume_Main').addEventListener('click', openInNewTab);
+
+	// Add event listener to button
+	document.getElementById('downloadResume_Secondary').addEventListener('click', openInNewTab);
 });
