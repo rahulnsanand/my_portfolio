@@ -2,7 +2,7 @@ docker image prune -a
 docker system prune -a --volumes
 
 # Step 1: Define a unique build ID (using a timestamp for uniqueness)
-$BUILD_ID = 17
+$BUILD_ID = 18
 
 # Step 2: Build the Docker image with a unique tag
 docker build --no-cache -t rahulnsanand/portfolio:$BUILD_ID .
